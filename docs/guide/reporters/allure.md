@@ -13,6 +13,10 @@ The Allure Reporter creates [Allure](http://allure.qatools.ru/) test reports whi
 ```js
 $ npm install wdio-allure-reporter --save-dev
 ```
+To upgrade to Allure 2
+```
+npm install allure-commandline --save-dev
+```
 
 Then add `allure` to the `reporters` array in your wdio.conf.js and define the output directory of the allure reports:
 
@@ -61,6 +65,10 @@ Install the [Allure command-line tool](https://www.npmjs.com/package/allure-comm
 
 ```sh
 $ allure generate [allure_output_dir] && allure report open
+```
+Allure 2
+```
+allure generate --clean && allure open
 ```
 
 This will generate a report (by default in `./allure-report`), and open it in your browser:
